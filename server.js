@@ -25,13 +25,13 @@ app.get('/activities/:city', async (req, res) => {
     if (mainWeather == 'Rain') {
         recomendation = "Its a perfect day to go to a museum, or watch a TV series while eating popcorn, Oh and don't forget your umbrella"
         category = "indoor"
-    } else if (temperature < 25) {
-        recomendation = "This temperature is calling for a park or do some picnic with someonem, go outside and enjoy the day!"
-        category = "outdoor"
-    } else if (temperature < 15) {
+    } else if (temperature <= 15) {
         recomendation = "Its a freeze day!, its perfect to starting read a book and making some coffe"
         category = "indoor"
-    } else if (temperature > 30) {
+    } else if (temperature <= 25) {
+        recomendation = "This temperature is calling for a park or do some picnic with someonem, go outside and enjoy the day!"
+        category = "outdoor"
+    } else if (temperature >= 30) {
         recomendation = "Its so hot!, now its time to go to the beach or a pool and chill with your friends, Oh and stay hydrated!"
         category = "outdoor"
     } else {
@@ -43,7 +43,7 @@ app.get('/activities/:city', async (req, res) => {
         local: data.name,
         country: data.sys.country,
         current_weather: {
-            temp: `${temperature}C°`,
+            temperature: `${temperature}C°`,
             description: data.weather[0].description
         },
         ideas: {
