@@ -31,12 +31,12 @@ app.get('/activities/:city', async (req, res) => {
     } else if (temperature <= 25) {
         recomendation = "This temperature is calling for a park or do some picnic with someone, go outside and enjoy the day!"
         category = "outdoor"
-    } else if (temperature >= 30) {
-        recomendation = "Its so hot!, now its time to go to the beach or a pool and chill with your friends, Oh and stay hydrated!"
+    } else if (temperature < 30) {
+        recomendation = "It's getting warm! Perfect for outdoor activities, but bring water and sunscreen."
         category = "outdoor"
     } else {
-        recomendation = "The temperature is quite pleasant for a walk."
-        category = "neutral"
+        recomendation = "Its so hot!, now its time to go to the beach or a pool and chill with your friends, Oh and stay hydrated!"
+        category = "outdoor"
     }
 
     res.json({
