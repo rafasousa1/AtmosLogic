@@ -44,6 +44,8 @@ app.get('/activities/:city', async (req, res) => {
         country: data.sys.country,
         current_weather: {
             temperature: `${temperature}°C`,
+            Max: data.main.temp_max,
+            Min: data.main.temp_min,
             description: data.weather[0].description
         },
         ideas: {
