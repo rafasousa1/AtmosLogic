@@ -1,7 +1,7 @@
 # AtmosLogic 🌤️
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
-This API checks the current weather conditions and recommends suitable activities based on temperature, weather status, and time of day.
+This API checks the current weather conditions and recommends suitable activities for the user. The recommendations are personalized based on temperature and weather status helping to better plan activities according to the weather.
 
 ## Technologies
 
