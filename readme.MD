@@ -24,13 +24,13 @@ GET /activities/Madrid
 	"local": "Madrid",
 	"country": "ES",
 	"current_weather": {
-		"temperature": "6.53°C",
-		"Max": 7.68,
+		"temperature": "6.27°C",
+		"Max": 7.18,
 		"Min": 5.56,
 		"description": "algumas nuvens"
 	},
 	"ideas": {
-		"recomendation": "It's a freezing day!, its perfect to starting read a book and making some coffee",
+		"recomendation": "It's a freezing day! It's perfect to start reading a book and make some coffee.",
 		"category": "indoor"
 	}
 }
