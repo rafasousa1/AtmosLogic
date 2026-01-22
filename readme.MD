@@ -7,7 +7,7 @@ This API checks the current weather conditions and recommends suitable activitie
 
 - Node.js
 - Express
-- OpenWeather
+- OpenWeather API
 
 ## Endpoints
 
