@@ -23,19 +23,19 @@ app.get('/activities/:city', async (req, res) => {
     let category = ""
 
     if (mainWeather == 'Rain') {
-        recomendation = "Its a perfect day to go to a museum, or watch a TV series while eating popcorn, Oh and don't forget your umbrella"
+        recomendation = "It's a perfect day to go to a museum, or watch a TV series while eating popcorn, Oh and don't forget your umbrella."
         category = "indoor"
     } else if (temperature <= 16) {
-        recomendation = "It's a freezing day!, its perfect to starting read a book and making some coffee"
+        recomendation = "It's a freezing day! It's perfect to start reading a book and make some coffee."
         category = "indoor"
     } else if (temperature <= 25) {
-        recomendation = "This temperature is calling for a park or do some picnic with someone, go outside and enjoy the day!"
+        recomendation = "This weather is perfect for going to the park or having a picnic with someone. Go outside and enjoy the day!"
         category = "outdoor"
     } else if (temperature < 30) {
         recomendation = "It's getting warm! Perfect for outdoor activities, but bring water and sunscreen."
         category = "outdoor"
     } else {
-        recomendation = "Its so hot!, now its time to go to the beach or a pool and chill with your friends, Oh and stay hydrated!"
+        recomendation = "It's so hot! Now its time to go to the beach or a pool and chill with your friends, Oh and stay hydrated!"
         category = "outdoor"
     }
 
