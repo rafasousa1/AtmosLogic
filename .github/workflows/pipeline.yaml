@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code # nome da etapa
-        uses: actions/checkout@v3 # action pronta para checkout do código
+        uses: actions/checkout@v4 # action pronta para checkout do código
       
       - name: Set up Node.js # preparando o node
-        uses: actions/setup-node@v3 # usando uma action
+        uses: actions/setup-node@v4 # usando uma action
         with:
           node-version: '22' # especificando a versão
       
