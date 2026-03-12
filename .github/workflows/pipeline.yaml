@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches:
+    branches: # a cada push na main roda a pipe
       - main
 
 jobs:
