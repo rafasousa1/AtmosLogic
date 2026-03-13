@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches: # a cada push na main roda a pipe
-      - main
+      - main  
 
 jobs:
   build_and_deploy:
@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js # preparando o node
         uses: actions/setup-node@v4 # usando uma action
         with:
-          node-version: '22' # especificando a versão
+          node-version: '22 ' # especificando a versão
       
       - name: Install dependecies # rodando comando no terminal
         run: npm install
